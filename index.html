@@ -1,0 +1,77 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main" id="main">
+<section id="home">
+<div class="hero-text">
+<h2>Hey there, welcome 👋</h2>
+<h1>I'm Hariharan S</h1>
+<h2>An<span>Aspiring Developer</span></h2>
+<p>I love coding, solving problems, and just tinkering with tech in general.</p>
+<button class="btn" onclick="openimg(['image/cv.jpg'])">View CV</button>
+<a href="image/cv.jpg" download class="btn">Download CV</a>
+</div>
+<div class="hero-img">
+<div class="glow-circle"></div>
+<img src="image/hari.jpg" alt="Hariharan photo">
+</div>
+</section>
+<section id="about">
+<h1>About Me</h1>
+<p>Hey, I’m Hariharan, currently diving deep into Computer Science. 
+         I enjoy building small (and sometimes big) things with Java, Python, HTML, and CSS. 
+         I try to challenge myself often and I’m always curious to pick up new skills.</p>
+</section>
+<section id="skills">
+<h1>Skills</h1>
+<ul class="skills-list">
+<li>Leadership</li>
+<li>Good communicator</li>
+<li>Teamwork</li>
+<li>Problem-solving</li>
+</ul>
+</section>
+<section id="portfolio">
+<h1>Portfolio</h1>
+<p>A few of my projects:</p>
+<div class="portfolio-grid">
+<div class="card" onclick="openimg(['image/1.jpg'])">
+<h3>IBM Front-End Dev Course</h3>
+<p>Got hands-on with HTML, CSS, JS during IBM's training program.</p>
+</div>
+<div class="card" onclick="openimg(['image/2.1.jpg','image/2.2.jpg','image/2.3.jpg'])">
+<h3>Statistical Calculator (Java)</h3>
+<p>Created a basic calculator for mean, median, mode in Java.</p>
+</div>
+<div class="card" onclick="openimg(['image/3.1.jpg','image/3.2.jpg','image/3.3.jpg'])">
+<h3>Bike Showroom Website</h3>
+<p>A work-in-progress site showing bikes and details. Still tweaking it!</p>
+</div>
+</div>
+</section>
+<section id="contact">
+<h1>Contact</h1>
+<p>If you’d like to chat or collaborate, you can find me here:</p>
+<div class="contact-info">
+        📧 Email: kumaravelat2005@gmail.com<br>
+        📞 Phone: +91 80561 94886<br>
+        🔗 LinkedIn: 
+<a href="https://www.linkedin.com/in/hariharan-s-1710a6375" target="_blank" class="contact-link">linkedin.com/in/hariharan-s</a><br>
+        💻 GitHub: 
+<a href="https://github.com/mr-heain" target="_blank" class="contact-link">github.com/mr-heain</a>
+</div>
+</section>
+</div>
+<div class="viewer" id="viewer">
+<button class="close" onclick="closeimg()">✖</button>
+<button class="prev" id="prevBtn" onclick="preimg()">❮</button>
+<img id="viewer-img" src="">
+<button class="next" id="nextBtn" onclick="nxtimg()">❯</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
