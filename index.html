@@ -24,10 +24,10 @@
     <form id="regForm">
         <fieldset>
             <legend>Personal Info</legend>
-            <label>Name: <input type="text" id="name"></label><br><br>
-            <label>Email: <input type="email" id="email"></label><br><br>
-            <label>Phone: <input type="tel" id="phone"></label><br><br>
-            <label>DOB: <input type="date" id="dob"></label><br><br>
+            <label>Name: <input type="text" id="name" required></label><br><br>
+            <label>Email: <input type="email" id="email"required></label><br><br>
+            <label>Phone: <input type="tel" id="phone"required></label><br><br>
+            <label>DOB: <input type="date" id="dob"required></label><br><br>
             Gender: 
             <input type="radio" name="g" value="Male"> Male
             <input type="radio" name="g" value="Female"> Female
@@ -49,8 +49,8 @@
 
         <fieldset>
             <legend>Additional Details</legend>
-            College: <input type="text" id="college"><br><br>
-            Upload ID: <input type="file" id="idProof"><br><br>
+            College: <input type="text" id="college"required><br><br>
+            Upload ID: <input type="file" id="idProof"required><br><br>
             Comments: <br>
             <textarea id="comments" rows="3" cols="30"></textarea>
         </fieldset>
